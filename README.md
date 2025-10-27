@@ -173,36 +173,36 @@ Ensure your directory looks like:
 ```
 peg_in_hole_project/
 ├── vf_sac_peg_insertion/
-│   ├── config/
-│   │   ├── __init__.py
-│   │   ├── sac_config.py
-│   │   ├── env_config.py
-│   │   └── curriculum_config.py
-│   ├── envs/
-│   │   ├── __init__.py
-│   │   └── peg_hole_env.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── encoders.py
-│   │   ├── attention.py
-│   │   ├── policy.py
-│   │   └── value.py
-│   ├── algorithms/
-│   │   ├── __init__.py
-│   │   ├── sac.py
-│   │   ├── her.py
-│   │   └── curriculum.py
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── replay_buffer.py
-│   │   └── logger.py
-│   ├── train.py
-│   ├── test.py
-│   └── requirements.txt
-└── DRL_Peg-in-Hole_UR5/
-    ├── urdf/
-    │   └── ur5_robotiq_85.urdf
-    └── box.stl
+   ├── config/
+   │   ├── __init__.py
+   │   ├── sac_config.py
+   │   ├── env_config.py
+   │   └── curriculum_config.py
+   ├── envs/
+   │   ├── __init__.py
+   │   └── peg_hole_env.py
+   ├── models/
+   │   ├── __init__.py
+   │   ├── encoders.py
+   │   ├── attention.py
+   │   ├── policy.py
+   │   └── value.py
+   ├── algorithms/
+   │   ├── __init__.py
+   │   ├── sac.py
+   │   ├── her.py
+   │   └── curriculum.py
+   ├── utils/
+   │   ├── __init__.py
+   │   ├── replay_buffer.py
+   │   └── logger.py
+   ├── train.py
+   ├── test.py
+   ├── requirements.txt
+   └── DRL_Peg-in-Hole_UR5/
+        ├── urdf/
+        │   └── ur5_robotiq_85.urdf 
+        └── box.stl
 ```
 
 ***
