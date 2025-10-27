@@ -1,4 +1,4 @@
-# VF-SAC: Vision-Force Soft Actor-Critic for Adaptive Peg-in-Hole Assembly
+# VF-SAC: Visual-Fusion-Proprioceptive Soft Actor-Critic for Adaptive Peg-in-Hole Assembly
 
 ## 📋 Table of Contents
 - [Overview](#overview)
