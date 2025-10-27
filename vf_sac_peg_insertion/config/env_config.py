@@ -43,7 +43,7 @@ class EnvConfig:
     # Simulation
     sim_timestep = 1/240.0
     sim_steps_per_action = 10
-    max_episode_steps = 500
+    max_episode_steps = 60
     
     # Control
     velocity_control = True
