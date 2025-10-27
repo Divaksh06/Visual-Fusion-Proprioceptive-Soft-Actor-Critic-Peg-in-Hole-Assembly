@@ -51,7 +51,7 @@
 │                     Observation Input                       │
 ├──────────────────────┬──────────────────────────────────────┤
 │   RGB-D Camera       │   Force-Torque Sensor + Proprio      │
-│   (256×256×4)        │   (6 F/T × 5 history = 30-dim)       │
+│   (128×128×4)        │   (6 F/T × 5 history = 30-dim)       │
 │        ↓             │              ↓                       │
 │   ResNet-18          │      MLP Encoder                     │
 │   Vision Encoder     │   (30→64→128→128)                    │
