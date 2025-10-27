@@ -20,20 +20,16 @@ from algorithms.curriculum import CurriculumManager
 from utils.logger import Logger
 
 def main(args):
-    # Configuration
     sac_config = SACConfig()
     env_config = EnvConfig()
     env_config.render = args.render
     curriculum_config = CurriculumConfig()
     
-    # Device
     device = torch.device('cuda' if torch.cuda.is_available() and args.cuda else 'cpu')
     print(f"[INFO] Training on device: {device}")
     
-    # Environment
     env = PegHoleEnv(env_config)
     
-    # Networks
     vision_encoder = VisionEncoder(feature_dim=sac_config.visual_feature_dim)
     force_encoder = ForceEncoder(feature_dim=sac_config.force_feature_dim)
     cross_modal_attention = CrossModalAttention(
@@ -46,7 +42,6 @@ def main(args):
     critic1 = CriticNetwork(state_dim, sac_config.action_dim)
     critic2 = CriticNetwork(state_dim, sac_config.action_dim)
     
-    # SAC Agent
     agent = SAC(
         config=sac_config,
         vision_encoder=vision_encoder,
@@ -58,20 +53,16 @@ def main(args):
         device=device
     )
     
-    # Replay buffer
     replay_buffer = HERBuffer(
         capacity=int(sac_config.buffer_size),
         her_ratio=sac_config.her_ratio,
         strategy=sac_config.her_strategy
     )
     
-    # Curriculum
     curriculum = CurriculumManager(curriculum_config)
     
-    # Logger
     logger = Logger(args.log_dir)
     
-    # Training loop
     total_steps = 0
     episode = 0
     
@@ -79,11 +70,9 @@ def main(args):
     pbar = tqdm(total=args.total_episodes, desc="Training")
     
     while episode < args.total_episodes and not curriculum.is_complete():
-        # Update curriculum
         stage_config = curriculum.get_current_stage()
         env.set_curriculum_stage(stage_config)
         
-        # Reset
         obs, info = env.reset()
         obs['phase'] = np.array([1.0], dtype=np.float32)
         episode_transitions = []
@@ -91,13 +80,11 @@ def main(args):
         episode_length = 0
         
         for t in range(args.max_episode_length):
-            # Select action
             if total_steps < sac_config.warmup_steps:
                 action = env.action_space.sample()
             else:
                 action = agent.select_action(obs, deterministic=False)
             
-            # Step
             next_obs, reward, done, truncated, info = env.step(action)
             
             episode_reward += reward
@@ -110,21 +97,17 @@ def main(args):
             if done or truncated:
                 break
         
-        # Add to buffer
         replay_buffer.add_episode(episode_transitions)
         
-        # Update curriculum
         curriculum.update(info.get('success', False))
         
-        # Training updates
         if total_steps >= sac_config.warmup_steps and len(replay_buffer) > sac_config.batch_size:
             for _ in range(episode_length):
                 batch = replay_buffer.sample(sac_config.batch_size)
                 train_metrics = agent.update(batch)
-                if _ == 0:  # Log once per episode
+                if _ == 0:
                     logger.log_train_metrics(train_metrics, total_steps)
         
-        # Log episode
         logger.log_episode_metrics({
             'episode_reward': episode_reward,
             'episode_length': episode_length,
@@ -142,13 +125,11 @@ def main(args):
             'stage': curriculum.current_stage
         })
         
-        # Evaluation
         if episode % args.eval_interval == 0:
             eval_metrics = evaluate(agent, env, n_episodes=10)
             logger.log_eval_metrics(eval_metrics, episode)
             print(f"\n[EVAL] Episode {episode}: Success Rate = {eval_metrics['success_rate']:.2%}")
         
-        # Save checkpoint
         if episode % args.save_interval == 0:
             save_checkpoint(agent, episode, args.save_dir)
             print(f"[INFO] Checkpoint saved at episode {episode}")

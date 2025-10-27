@@ -14,18 +14,15 @@ from models.value import CriticNetwork
 from algorithms.sac import SAC
 
 def main(args):
-    # Configuration
     sac_config = SACConfig()
     env_config = EnvConfig()
-    env_config.render = True  # Always render during testing
+    env_config.render = True 
     
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"[INFO] Testing on device: {device}")
     
-    # Environment
     env = PegHoleEnv(env_config)
     
-    # Networks
     vision_encoder = VisionEncoder(feature_dim=sac_config.visual_feature_dim)
     force_encoder = ForceEncoder(feature_dim=sac_config.force_feature_dim)
     cross_modal_attention = CrossModalAttention(feature_dim=sac_config.visual_feature_dim, num_heads=4)
@@ -35,7 +32,6 @@ def main(args):
     critic1 = CriticNetwork(state_dim, sac_config.action_dim)
     critic2 = CriticNetwork(state_dim, sac_config.action_dim)
     
-    # SAC Agent
     agent = SAC(
         config=sac_config,
         vision_encoder=vision_encoder,
@@ -47,7 +43,6 @@ def main(args):
         device=device
     )
     
-    # Load checkpoint
     if args.checkpoint:
         print(f"[INFO] Loading checkpoint: {args.checkpoint}")
         checkpoint = torch.load(args.checkpoint, map_location=device)
@@ -57,7 +52,6 @@ def main(args):
         agent.actor.load_state_dict(checkpoint['actor'])
         print(f"[INFO] Loaded checkpoint from episode {checkpoint['episode']}")
     
-    # Test
     success_count = 0
     
     for episode in range(args.num_episodes):
