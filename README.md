@@ -1,4 +1,4 @@
-# VF-SAC: Visual-Fusion-Proprioceptive Soft Actor-Critic for Adaptive Peg-in-Hole Assembly
+# VFP-SAC: Visual-Fusion-Proprioceptive Soft Actor-Critic for Adaptive Peg-in-Hole Assembly
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -15,7 +15,7 @@
 
 ## 🎯 Overview
 
-**VF-SAC** is a novel multimodal reinforcement learning algorithm that combines visual perception (RGB-D camera) and haptic sensing (force-torque) for adaptive robotic peg-in-hole assembly. Unlike existing approaches that use either vision or force sensors, VF-SAC fuses both modalities using a cross-modal attention mechanism to achieve **submillimeter accuracy** across diverse hole geometries.
+**VFP-SAC** is a novel multimodal reinforcement learning algorithm that combines visual perception (RGB-D camera) and haptic sensing (force-torque) for adaptive robotic peg-in-hole assembly. Unlike existing approaches that use either vision or force sensors, VF-SAC fuses both modalities using a cross-modal attention mechanism to achieve **submillimeter accuracy** across diverse hole geometries.
 
 ### Key Innovations
 
