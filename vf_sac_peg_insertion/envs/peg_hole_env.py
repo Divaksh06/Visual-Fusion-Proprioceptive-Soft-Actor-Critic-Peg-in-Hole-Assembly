@@ -20,10 +20,9 @@ class PegHoleEnv(Env):
         p.setGravity(0, 0, -9.81)
         p.setTimeStep(config.sim_timestep)
         
-        # ✅ LARGER action space for faster movement
         self.action_space = spaces.Box(
-            low=np.array([-0.1, -0.1, -0.1]),  # ← LARGER (10cm movements)
-            high=np.array([0.1, 0.1, -0.02]),  # ← Downward bias (2cm down minimum)
+            low=np.array([-0.1, -0.1, -0.1]),
+            high=np.array([0.1, 0.1, -0.02]),
             dtype=np.float32
         )
 
@@ -56,7 +55,6 @@ class PegHoleEnv(Env):
         self.image_width = config.camera_width
         self.image_height = config.camera_height
         
-        # Last successful IK solution
         self.last_joint_poses = None
         
     def reset(self, seed=None, options=None):
@@ -66,7 +64,6 @@ class PegHoleEnv(Env):
         p.setGravity(0, 0, -9.81)
         p.setTimeStep(self.config.sim_timestep)
         
-        # Load environment
         self.plane_id = p.loadURDF("plane.urdf")
         self.table_id = p.loadURDF(
             "table/table.urdf",
@@ -74,7 +71,6 @@ class PegHoleEnv(Env):
             p.getQuaternionFromEuler([0, 0, np.pi / 2])
         )
         
-        # Load robot
         if not os.path.exists(self.config.urdf_path):
             raise FileNotFoundError(f"URDF not found: {self.config.urdf_path}")
         
@@ -86,14 +82,11 @@ class PegHoleEnv(Env):
             flags=p.URDF_USE_SELF_COLLISION
         )
         
-        # Parse joints
         self._parse_joint_info()
         
-        # Rest poses
         self.rest_poses = [0, -1.57, 1.57, -1.5, -1.57, 0.0]
         self.last_joint_poses = list(self.rest_poses)
         
-        # Apply position control during reset
         for i, joint_id in enumerate(self.joint_indices):
             p.setJointMotorControl2(
                 self.robot_id,
@@ -103,21 +96,17 @@ class PegHoleEnv(Env):
                 force=1000
             )
         
-        # Step simulation
         for _ in range(100):
             p.stepSimulation()
         
-        # Create hole
         if hasattr(self, 'hole_id') and self.hole_id is not None:
             p.removeBody(self.hole_id)
         
-        # Randomize hole position
         x = random.uniform(0.5, 0.6)
         y = random.uniform(0, 0.1)
         z = 0.65
         self.target_pos = np.array([x, y, z])
         
-        # Load hole mesh
         if not os.path.exists(self.config.hole_mesh_path):
             raise FileNotFoundError(f"Hole mesh not found: {self.config.hole_mesh_path}")
         
@@ -143,7 +132,6 @@ class PegHoleEnv(Env):
             baseOrientation=p.getQuaternionFromEuler([0, 0, 0])
         )
         
-        # Initialize state
         self.force_history = np.zeros(30)
         self.phase = 1
         self.current_step = 0
@@ -201,43 +189,32 @@ class PegHoleEnv(Env):
         self.current_step += 1
         action = np.clip(action, self.action_space.low, self.action_space.high)
         
-        # Get current PEG position
         peg_state = p.getLinkState(self.robot_id, self.peg_link_index)
         current_pos = np.array(peg_state[0])
         current_orn = peg_state[1]
         
-        # DIRECT MOVEMENT - action directly specifies where to go
         new_pos = current_pos + action
-        
-        # Clamp to workspace to prevent IK failures
         new_pos = np.clip(new_pos, 
                         [0.2, -0.3, 0.4], 
                         [0.8, 0.3, 0.9])
         
-        # MOVE ARM - IK will coordinate all joints
         self._move_arm_to_fast(new_pos, current_orn)
         
-        # Step simulation fewer times for faster execution
         for _ in range(5):
             p.stepSimulation()
         
-        # Get observation
         obs = self._get_obs()
         
-        # Rewards
         reward = self._compute_reward(obs, action)
         
-        # Print after every 20 steps
         if self.current_step % 20 == 0:
             print(f"[Step {self.current_step}] Reward: {reward:.3f}, Peg Position: x={current_pos[0]:.3f}, y={current_pos[1]:.3f}, z={current_pos[2]:.3f}")
         
-        # Phase transition
         if self.phase == 1 and self._contact_detected():
             self.phase = 2
         
         obs['phase'] = np.array([self.phase], dtype=np.float32)
         
-        # Done check
         done = self._check_done()
         truncated = self.current_step >= self.config.max_episode_steps
         
@@ -248,7 +225,6 @@ class PegHoleEnv(Env):
             'insertion_depth': self._get_insertion_depth(),
         }
         
-        # Print final reward and position upon done
         if done or truncated:
             print(f"[Episode End] Total Steps: {self.current_step}, Final Reward: {reward:.3f}, Final Peg Position: x={current_pos[0]:.3f}, y={current_pos[1]:.3f}, z={current_pos[2]:.3f}")
         
@@ -258,37 +234,32 @@ class PegHoleEnv(Env):
     def _move_arm_to_fast(self, pos, orn):
         """Move arm FAST using IK - all joints move together"""
         try:
-            # ✅ Calculate IK ONCE with good parameters
             joint_poses = p.calculateInverseKinematics(
                 self.robot_id,
                 self.peg_link_index,
                 pos,
                 orn,
-                restPoses=list(self.last_joint_poses),  # Use last solution as starting point
+                restPoses=list(self.last_joint_poses),
                 lowerLimits=[self.joints[j].lowerLimit for j in self.joint_indices],
                 upperLimits=[self.joints[j].upperLimit for j in self.joint_indices],
                 jointRanges=[self.joints[j].upperLimit - self.joints[j].lowerLimit for j in self.joint_indices],
-                maxNumIterations=50,  # ← Faster IK
-                residualThreshold=5e-3  # ← Looser tolerance for speed
+                maxNumIterations=50,
+                residualThreshold=5e-3
             )
             
-            # Store successful IK solution
             self.last_joint_poses = list(joint_poses[:6])
-            
-            # ✅ Apply HIGH FORCE to all joints SIMULTANEOUSLY
             for i, joint_id in enumerate(self.joint_indices):
                 p.setJointMotorControl2(
                     self.robot_id,
                     joint_id,
                     p.POSITION_CONTROL,
                     targetPosition=joint_poses[i],
-                    force=500,  # HIGH FORCE for fast movement
-                    positionGain=0.01,  # ← Higher gain for snappier response
-                    velocityGain=0.3   # ← Higher damping to prevent oscillation
+                    force=500, 
+                    positionGain=0.01,
+                    velocityGain=0.3
                 )
             
         except Exception as e:
-            # If IK fails, maintain last valid pose with HIGH force
             print(f"[DEBUG] IK failed at {pos}, maintaining last pose")
             for i, joint_id in enumerate(self.joint_indices):
                 p.setJointMotorControl2(
@@ -420,34 +391,26 @@ class PegHoleEnv(Env):
 
         dist_z = self.target_pos[2] - peg_pos[2]
 
-        # Previous step peg z for measuring progress
         if not hasattr(self, 'prev_peg_z'):
             self.prev_peg_z = peg_pos[2]
 
-        # Horizontal alignment - encourages getting close on XY plane
         xy_radius = 0.1
-        r_xy = np.clip((xy_radius - dist_xy) / xy_radius, 0, 1) * 5.0  # Max 5 reward
+        r_xy = np.clip((xy_radius - dist_xy) / xy_radius, 0, 1) * 5.0
 
-        # Vertical progress - positive reward proportional to how much peg descended since last step
         z_progress = max(0.0, self.prev_peg_z - peg_pos[2])
         z_bonus = 5.0 * z_progress
 
-        # Strong additional reward for decent vertical alignment within proximity region
         if dist_xy < 0.04:
             z_bonus += 10.0 * np.clip(dist_z / 0.04, 0, 1)
 
-        # Large bonus for success (inserted sufficiently)
         success_bonus = 100.0 if self._is_success() else 0.0
 
-        # Penalize large actions to encourage smoothness
         action_penalty = -0.05 * np.linalg.norm(action)
 
-        # Penalty for no progress directly above hole (discourages hovering)
         no_vert_progress_penalty = 0.0
         if dist_xy < 0.03 and abs(z_progress) < 1e-3:
             no_vert_progress_penalty = -0.5
 
-        # Soft penalty for force spikes (optional)
         max_force = np.max(np.abs(obs['force_torque_history'][-6:-3]))
         force_penalty = -0.1 * max_force
 
@@ -463,7 +426,7 @@ class PegHoleEnv(Env):
         peg_pos = p.getLinkState(self.robot_id, self.peg_link_index)[0]
         dist_xy = np.linalg.norm(np.array(peg_pos[:2]) - np.array(self.target_pos[:2]))
         dist_z = self.target_pos[2] - peg_pos[2]
-        return dist_xy < 0.02 and dist_z > 0.02  # 2 cm insertion minimum
+        return dist_xy < 0.02 and dist_z > 0.02
 
 
     
