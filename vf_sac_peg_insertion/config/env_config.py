@@ -58,3 +58,5 @@ class EnvConfig:
     # Workspace limits
     workspace_center = [0.3, 0.0, 0.3]
     workspace_radius = 0.5
+
+

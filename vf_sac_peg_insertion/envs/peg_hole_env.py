@@ -378,7 +378,7 @@ class PegHoleEnv(Env):
     
     def _contact_detected(self):
         """Check contact"""
-        contacts = p.getContactPoints(bodyA=self.robot_id, linkIndexA=self.peg_link_index)
+        contacts = p.getContactPoints(bodyA=self.hole_id, linkIndexA=self.peg_link_index)
         return len(contacts) > 0
     
     def _compute_reward(self, obs, action):
