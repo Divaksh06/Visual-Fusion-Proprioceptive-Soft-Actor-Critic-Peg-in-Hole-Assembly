@@ -248,7 +248,7 @@ peg_in_hole_project/
 |-----------|-------|-------------|
 | **Robot Configuration** |
 | `urdf_path` | DRL_Peg-in-Hole_UR5/urdf/ur5_robotiq_85.urdf | UR5 robot URDF |
-| `hole_mesh_path` | DRL_Peg-in-Hole_UR5/box.stl | Hole mesh file |
+| `hole_mesh_path` | DRL_Peg-in-Hole_UR5/urdf/box.stl | Hole mesh file |
 | `num_joints` | 6 | UR5 controllable joints |
 | **Peg Properties** |
 | `peg_radius` | 0.018 m (18 mm) | Cylindrical peg radius |
