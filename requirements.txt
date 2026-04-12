@@ -1,13 +1,44 @@
-# NOTE: pyroki must be installed from source FIRST:
-#   git clone https://github.com/chungmin99/pyroki.git
-#   cd pyroki && pip install -e . && cd ..
-# This also installs jax, jaxlib, jaxlie, jaxls, yourdfpy, jax-dataclasses.
+# ==============================================================
+# Peg-in-Hole RL — Python Dependencies
+# ==============================================================
+#
+# Install order matters.  Follow these steps exactly:
+#
+#   1. Create & activate a virtual environment:
+#        python -m venv PIHVFP && source PIHVFP/bin/activate
+#
+#   2. Install PyRoKi from source (not on PyPI):
+#        git clone https://github.com/chungmin99/pyroki.git
+#        cd pyroki && pip install -e . && cd ..
+#      This transitively installs: jax, jaxlib, jaxlie, jaxls,
+#      yourdfpy, jax-dataclasses, and their sub-dependencies.
+#
+#   3. Install this file:
+#        pip install -r requirements.txt
+#
+# IMPORTANT — JAX / PyTorch CUDA compatibility:
+#   PyTorch ships its own CUDA 13 runtime libraries.
+#   JAX's GPU plugin requires CUDA 12 libraries.
+#   These two CANNOT coexist — cuSPARSE and other libs will clash.
+#   The code forces JAX_PLATFORMS=cpu in pyroki_ik.py, which is
+#   fine because IK is a tiny 6-variable solve (microseconds on CPU).
+#   Do NOT install jax[cuda12] — it will break the environment.
+# ==============================================================
 
+# ---- Core simulation & RL framework ----
 mujoco>=3.0.0
 gymnasium>=0.29.0
 torch>=2.1.0
+
+# ---- Numerics ----
 numpy>=1.24.0
-pyyaml>=6.0
 scipy>=1.11.0
+
+# ---- Configuration ----
+pyyaml>=6.0
+
+# ---- Logging & tracking ----
 wandb>=0.16.0
+
+# ---- Image I/O (video recording, frame saving) ----
 imageio>=2.31.0
