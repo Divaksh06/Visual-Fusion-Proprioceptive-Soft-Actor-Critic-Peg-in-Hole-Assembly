@@ -1,0 +1,13 @@
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_setup.py:_flush():81] Current SDK version is 0.25.1
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_setup.py:_flush():81] Configure stats pid to 51018
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/divaksh/.mujoco/PIH-VFPSAC/wandb/run-20260412_110604-qqop317s/logs/debug.log
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/divaksh/.mujoco/PIH-VFPSAC/wandb/run-20260412_110604-qqop317s/logs/debug-internal.log
+2026-04-12 11:06:04,014 INFO    MainThread:51018 [wandb_init.py:init():844] calling init triggers
+2026-04-12 11:06:04,015 INFO    MainThread:51018 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'xml_path': 'config/assets/heal5.xml', 'urdf_path': 'config/assets/heal.urdf', 'sim_timestep': 0.002, 'control_decimation': 5, 'episode_length': 500, 'img_size': 64, 'ft_history_len': 5, 'buffer_capacity': 500000, 'batch_size': 256, 'her_k': 4, 'warmup_steps': 5000, 'gamma': 0.99, 'tau': 0.005, 'actor_lr': 0.0003, 'critic_lr': 0.0003, 'alpha_lr': 0.0003, 'target_entropy': -6, 'ik_pos_only_phase0': True, 'pd_kp': [80, 80, 80, 40, 40, 40], 'pd_kd': [10, 10, 10, 5, 5, 5], 'gripper_ctrl': 50.0, 'reward_weights': {'alpha': 5.0, 'beta': 2.0, 'gamma': 10.0, 'delta': 1.0, 'force_limit': 5.0, 'success_bonus': 200.0, 'success_depth': 0.015, 'epsilon': 0.01}, 'phase': {'lateral_threshold': 0.005, 'contact_threshold': 0.3}, 'total_steps': 2000000, 'eval_every': 10000, 'save_every': 50000, 'wandb_project': 'peg_in_hole', 'wandb_entity': None, 'log_gate_values': True, 'curriculum_config': 'config/curriculum_stages.yaml', '_wandb': {}}
+2026-04-12 11:06:04,015 INFO    MainThread:51018 [wandb_init.py:init():892] starting backend
+2026-04-12 11:06:04,243 INFO    MainThread:51018 [wandb_init.py:init():895] sending inform_init request
+2026-04-12 11:06:04,247 INFO    MainThread:51018 [wandb_init.py:init():903] backend started and connected
+2026-04-12 11:06:04,248 INFO    MainThread:51018 [wandb_init.py:init():973] updated telemetry
+2026-04-12 11:06:04,248 INFO    MainThread:51018 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout

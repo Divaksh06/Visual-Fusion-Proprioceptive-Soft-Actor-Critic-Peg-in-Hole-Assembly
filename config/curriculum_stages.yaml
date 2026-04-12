@@ -1,0 +1,35 @@
+# ============================================================
+# Curriculum Stages — progressive difficulty
+# ============================================================
+stages:
+  - id: 0
+    name: "coarse_approach"
+    pos_noise_mm: 0.0
+    rot_noise_deg: 0.0
+    success_depth_mm: 5.0
+    advance_threshold: 0.80    # advance at 80 % success over 100 episodes
+
+  - id: 1
+    name: "noisy_approach"
+    pos_noise_mm: 2.0
+    rot_noise_deg: 2.0
+    success_depth_mm: 8.0
+    advance_threshold: 0.75
+
+  - id: 2
+    name: "tight_insertion"
+    pos_noise_mm: 4.0
+    rot_noise_deg: 4.0
+    success_depth_mm: 12.0
+    advance_threshold: 0.70
+
+  - id: 3
+    name: "full_task"
+    pos_noise_mm: 5.0
+    rot_noise_deg: 6.0
+    success_depth_mm: 15.0
+    advance_threshold: 0.65
+
+# Evaluation window
+eval_window: 100               # episodes to average over
+regression_drop: 0.20          # step back if success drops > 20 %

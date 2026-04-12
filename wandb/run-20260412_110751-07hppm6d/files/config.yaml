@@ -1,0 +1,136 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            mpmjmvdjeueitpp3vj8ha2glwrrt9del:
+                args:
+                    - --config
+                    - config/default.yaml
+                    - --cuda
+                    - --render
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 10
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "276977737728"
+                        used: "242899369984"
+                email: b24ee1095@iitj.ac.in
+                executable: /home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/bin/python
+                gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 3072
+                      memoryTotal: "8585740288"
+                      name: NVIDIA GeForce RTX 4060 Laptop GPU
+                      uuid: GPU-da0650f6-1a44-2614-42b0-564b7487e98c
+                host: lappy
+                memory:
+                    total: "14333300736"
+                os: Linux-6.8.0-107-generic-x86_64-with-glibc2.35
+                program: /home/divaksh/.mujoco/PIH-VFPSAC/train.py
+                python: CPython 3.10.12
+                root: /home/divaksh/.mujoco/PIH-VFPSAC
+                startedAt: "2026-04-12T05:37:51.675488Z"
+                writerId: mpmjmvdjeueitpp3vj8ha2glwrrt9del
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 12
+            "2":
+                - 1
+                - 12
+            "3":
+                - 16
+                - 61
+            "4": 3.10.12
+            "5": 0.25.1
+            "12": 0.25.1
+            "13": linux-x86_64
+actor_lr:
+    value: 0.0003
+alpha_lr:
+    value: 0.0003
+batch_size:
+    value: 256
+buffer_capacity:
+    value: 500000
+control_decimation:
+    value: 5
+critic_lr:
+    value: 0.0003
+curriculum_config:
+    value: config/curriculum_stages.yaml
+episode_length:
+    value: 500
+eval_every:
+    value: 10000
+ft_history_len:
+    value: 5
+gamma:
+    value: 0.99
+gripper_ctrl:
+    value: 50
+her_k:
+    value: 4
+ik_pos_only_phase0:
+    value: true
+img_size:
+    value: 64
+log_gate_values:
+    value: true
+pd_kd:
+    value:
+        - 10
+        - 10
+        - 10
+        - 5
+        - 5
+        - 5
+pd_kp:
+    value:
+        - 80
+        - 80
+        - 80
+        - 40
+        - 40
+        - 40
+phase:
+    value:
+        contact_threshold: 0.3
+        lateral_threshold: 0.005
+reward_weights:
+    value:
+        alpha: 5
+        beta: 2
+        delta: 1
+        epsilon: 0.01
+        force_limit: 5
+        gamma: 10
+        success_bonus: 200
+        success_depth: 0.015
+save_every:
+    value: 50000
+sim_timestep:
+    value: 0.002
+target_entropy:
+    value: -6
+tau:
+    value: 0.005
+total_steps:
+    value: 2000000
+urdf_path:
+    value: config/assets/heal.urdf
+wandb_entity:
+    value: null
+wandb_project:
+    value: peg_in_hole
+warmup_steps:
+    value: 5000
+xml_path:
+    value: config/assets/heal5.xml

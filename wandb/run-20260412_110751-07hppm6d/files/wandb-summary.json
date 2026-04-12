@@ -1,0 +1,1 @@
+{"max_lateral_force":16.65477050046678,"episode_reward":193.01445698384177,"success_rate":1,"_runtime":109.949397097,"gate_v_mean":0.5,"phase_switch_step":-1,"gate_f_mean":0.5,"is_success":1,"_wandb":{"runtime":109},"stage_id":0,"_timestamp":1.7759723818588524e+09,"insertion_depth_mm":289.38750813044356,"_step":91,"episode":91}

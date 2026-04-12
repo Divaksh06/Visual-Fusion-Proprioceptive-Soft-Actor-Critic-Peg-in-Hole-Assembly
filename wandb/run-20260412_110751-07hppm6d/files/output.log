@@ -1,0 +1,352 @@
+
+=== Starting Training — 2000000 steps ===
+[32m2026-04-12 11:07:53.350[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:53.545[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:07:53.716[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+
+[checkpoint] saved → checkpoints/best.pt
+[32m2026-04-12 11:07:55.261[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:55.293[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:07:55.302[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:07:56.410[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:56.423[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:07:56.450[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:07:57.552[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:57.565[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:07:57.595[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:07:58.691[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:58.703[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:07:58.730[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:07:59.926[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:07:59.958[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:07:59.968[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:01.030[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:01.043[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:01.070[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:02.132[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:02.146[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:02.174[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:03.241[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:03.254[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:03.281[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:04.353[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:04.367[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:04.410[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:05.502[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:05.534[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:05.544[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:06.761[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:06.793[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:06.803[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:07.881[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:07.894[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:07.921[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:09.013[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:09.026[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:09.055[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:10.143[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:10.173[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:10.183[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:11.269[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:11.282[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:11.311[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:12.388[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:12.402[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:12.429[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:13.546[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:13.559[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:13.587[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:14.850[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:14.883[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:14.893[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:15.975[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:15.988[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:16.016[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:17.123[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:17.136[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:17.165[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:18.266[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:18.278[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:18.307[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:19.425[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:19.438[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:19.466[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:20.579[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:20.592[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:20.619[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:21.722[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:21.735[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:21.762[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:22.874[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:22.906[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:22.916[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:24.199[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:24.211[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:24.240[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:25.325[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:25.339[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:25.367[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:26.472[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:26.484[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:26.513[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:27.582[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:27.595[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:27.624[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:28.746[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:28.777[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:28.787[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:29.879[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:29.891[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:29.929[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:31.026[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:31.041[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:31.070[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:32.266[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:32.280[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:32.313[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:33.487[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:33.502[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:33.531[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:34.675[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:34.689[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:34.718[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:36.164[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:36.199[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:36.209[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:37.328[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:37.360[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:37.370[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:38.473[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:38.485[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:38.515[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:39.640[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:39.653[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:39.682[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:40.815[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:40.828[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:40.857[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:41.971[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:41.985[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:42.014[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:43.146[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:43.159[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:43.189[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:44.297[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:44.330[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:44.340[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:45.428[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:45.442[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:45.472[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:46.587[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:46.600[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:46.628[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:47.733[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:47.746[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:47.776[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:48.904[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:48.917[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:49.241[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:50.357[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:50.390[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:50.400[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:51.516[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:51.529[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:51.557[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:52.676[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:52.689[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:52.718[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:53.829[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:53.861[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:53.871[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:54.985[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:54.997[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:55.028[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:56.155[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:56.167[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:56.198[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:57.324[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:57.337[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:57.366[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:58.494[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:58.507[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:58.536[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:08:59.637[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:08:59.651[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:08:59.681[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:00.829[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:00.870[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:00.880[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:01.979[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:02.013[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:02.022[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:03.124[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:03.137[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:03.168[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:04.264[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:04.277[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:04.307[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:05.814[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:05.854[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:05.865[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:06.972[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:06.984[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:07.015[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:08.142[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:08.155[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:08.185[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:09.327[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:09.363[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:09.372[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:10.513[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:10.526[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:10.556[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:11.713[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:11.746[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:11.755[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:12.871[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:12.884[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:12.916[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:14.055[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:14.067[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:14.098[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:15.280[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:15.293[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:15.323[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:16.455[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:16.468[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:16.500[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:17.632[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:17.645[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:17.676[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:18.807[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:18.821[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:18.853[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:19.976[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:20.010[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:20.020[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:21.147[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:21.160[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:21.190[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:22.333[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:22.345[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:22.376[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:23.493[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:23.507[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:23.538[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:25.127[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:25.162[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:25.172[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:26.296[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:26.309[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:26.339[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:27.475[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:27.488[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:27.522[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:28.649[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:28.661[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:28.689[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:29.823[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:29.835[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:29.865[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:30.992[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:31.005[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:31.035[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:32.199[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:32.212[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:32.243[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:33.378[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:33.417[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:33.427[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:34.641[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:34.654[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:34.685[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:35.871[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:35.884[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:35.917[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:37.034[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:37.047[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:37.078[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:38.203[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:38.215[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:38.244[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:39.385[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:39.399[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:39.431[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:40.662[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:40.679[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:40.714[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+[32m2026-04-12 11:09:41.894[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m121[0m - [1mBuilding optimization problem with 2 terms and 1 variables: 1 costs, 0 eq_zero, 1 leq_zero, 0 geq_zero[0m
+[32m2026-04-12 11:09:41.908[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m221[0m - [1mVectorizing constraint group with 1 constraints (constraint_leq_zero), 1 variables each: augmented_limit_residual[0m
+[32m2026-04-12 11:09:41.941[0m | [1mINFO    [0m | [36mjaxls._py310._problem[0m:[36manalyze[0m:[36m229[0m - [1mVectorizing group with 1 costs, 1 variables each: _pose_cost_analytical_jac[0m
+Traceback (most recent call last):
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/train.py", line 260, in <module>
+    main()
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/train.py", line 154, in main
+    next_obs, reward, terminated, truncated, info = env.step(action)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/envs/peg_hole_env.py", line 221, in step
+    q_target = self.heal_ik.delta_to_q_target(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/kinematics/pyroki_ik.py", line 214, in delta_to_q_target
+    [target_xyzw[3], target_xyzw[0], target_xyzw[1], target_xyzw[2]]
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/kinematics/pyroki_ik.py", line 161, in ik
+    ]
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jaxls/_py310/_problem.py", line 338, in solve
+    return solver.solve(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/traceback_util.py", line 182, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 292, in cache_miss
+    executable, pgle_profiler) = _python_pjit_helper(fun, jit_info, *args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 153, in _python_pjit_helper
+    out_flat, compiled, profiler = _pjit_call_impl_python(*args_flat, **p.params)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 1855, in _pjit_call_impl_python
+    ).compile()
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2410, in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2952, in from_hlo
+    xla_executable = _cached_compilation(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2743, in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 500, in compile_or_get_cached
+    return _compile_and_write_cache(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 768, in _compile_and_write_cache
+    executable = backend_compile_and_load(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/profiler.py", line 354, in wrapper
+    return func(*args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 385, in backend_compile_and_load
+    return backend.compile_and_load(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/train.py", line 260, in <module>
+    main()
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/train.py", line 154, in main
+    next_obs, reward, terminated, truncated, info = env.step(action)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/envs/peg_hole_env.py", line 221, in step
+    q_target = self.heal_ik.delta_to_q_target(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/kinematics/pyroki_ik.py", line 214, in delta_to_q_target
+    [target_xyzw[3], target_xyzw[0], target_xyzw[1], target_xyzw[2]]
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/peg_in_hole/kinematics/pyroki_ik.py", line 161, in ik
+    ]
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jaxls/_py310/_problem.py", line 338, in solve
+    return solver.solve(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/traceback_util.py", line 182, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 292, in cache_miss
+    executable, pgle_profiler) = _python_pjit_helper(fun, jit_info, *args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 153, in _python_pjit_helper
+    out_flat, compiled, profiler = _pjit_call_impl_python(*args_flat, **p.params)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/pjit.py", line 1855, in _pjit_call_impl_python
+    ).compile()
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2410, in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2952, in from_hlo
+    xla_executable = _cached_compilation(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/interpreters/pxla.py", line 2743, in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 500, in compile_or_get_cached
+    return _compile_and_write_cache(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 768, in _compile_and_write_cache
+    executable = backend_compile_and_load(
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/profiler.py", line 354, in wrapper
+    return func(*args, **kwargs)
+  File "/home/divaksh/.mujoco/PIH-VFPSAC/PIHVFP/lib/python3.10/site-packages/jax/_src/compiler.py", line 385, in backend_compile_and_load
+    return backend.compile_and_load(
+KeyboardInterrupt

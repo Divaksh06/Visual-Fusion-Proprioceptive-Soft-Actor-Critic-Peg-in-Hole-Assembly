@@ -1,0 +1,63 @@
+# ============================================================
+# Peg-in-Hole RL — Master Configuration
+# ============================================================
+
+# --- Paths ---
+xml_path: "config/assets/heal5.xml"
+urdf_path: "config/assets/heal.urdf"
+
+# --- Simulation ---
+sim_timestep: 0.002            # MuJoCo timestep (500 Hz)
+control_decimation: 5          # policy at 100 Hz, sim at 500 Hz
+episode_length: 500            # max steps per episode
+img_size: 64                   # RGB-D image side length
+ft_history_len: 5              # number of F/T frames to stack
+
+# --- Replay Buffer ---
+buffer_capacity: 500000
+batch_size: 256
+her_k: 4                       # HER "future" relabeling count
+warmup_steps: 5000             # random actions before training
+
+# --- SAC ---
+gamma: 0.99
+tau: 0.005
+actor_lr: 3.0e-4
+critic_lr: 3.0e-4
+alpha_lr: 3.0e-4
+target_entropy: -6             # = -action_dim
+
+# --- IK / PD Control ---
+ik_pos_only_phase0: true
+pd_kp: [80, 80, 80, 40, 40, 40]
+pd_kd: [10, 10, 10, 5, 5, 5]
+gripper_ctrl: 50.0
+
+# --- Reward Weights ---
+reward_weights:
+  alpha: 5.0                   # approach distance
+  beta: 2.0                    # axis alignment
+  gamma: 10.0                  # insertion depth progress
+  delta: 1.0                   # lateral force penalty
+  force_limit: 5.0             # N
+  success_bonus: 200.0
+  success_depth: 0.015         # m (15mm full insertion)
+  epsilon: 0.01                # step penalty
+
+# --- Phase Detection ---
+phase:
+  lateral_threshold: 0.005     # m
+  contact_threshold: 0.3       # N
+
+# --- Training ---
+total_steps: 2000000
+eval_every: 10000
+save_every: 50000
+
+# --- Logging ---
+wandb_project: "peg_in_hole"
+wandb_entity: null
+log_gate_values: true
+
+# --- Curriculum (reference file) ---
+curriculum_config: "config/curriculum_stages.yaml"

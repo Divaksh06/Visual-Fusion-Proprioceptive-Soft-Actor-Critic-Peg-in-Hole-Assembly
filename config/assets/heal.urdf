@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="heal_math_model">
+  
+  <link name="world" />
+
+  <link name="base_link" />
+  <joint name="world_to_base" type="fixed">
+    <origin xyz="-0.10 0 0.425" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
+  
+  <link name="link1" />
+  <joint name="joint_1" type="revolute">
+    <origin xyz="0 0 0.21" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link1" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="150" velocity="2" />
+  </joint>
+
+  <link name="link2" />
+  <joint name="joint_2" type="revolute">
+    <origin xyz="-0.001 0.09 0.15" rpy="1.57 0 0" />
+    <parent link="link1" />
+    <child link="link2" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="150" velocity="2" />
+  </joint>
+
+  <link name="link3" />
+  <joint name="joint_3" type="revolute">
+    <origin xyz="0 0.3 0" rpy="0 0 0" />
+    <parent link="link2" />
+    <child link="link3" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="150" velocity="2" />
+  </joint>
+
+  <link name="link4" />
+  <joint name="joint_4" type="revolute">
+    <origin xyz="0 0.162 0.086" rpy="-1.57 0 0" />
+    <parent link="link3" />
+    <child link="link4" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="80" velocity="2" />
+  </joint>
+
+  <link name="link5" />
+  <joint name="joint_5" type="revolute">
+    <origin xyz="0 0.03059 0.1601" rpy="-0.5236 0 3.1416" />
+    <parent link="link4" />
+    <child link="link5" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="80" velocity="2" />
+  </joint>
+
+  <link name="end_effector" />
+  <joint name="joint_6" type="revolute">
+    <origin xyz="0 -0.08 0.065" rpy="1.58 0 0" />
+    <parent link="link5" />
+    <child link="end_effector" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="80" velocity="2" />
+  </joint>
+
+  <link name="force_torque_sensor" />
+  <joint name="ee_to_ft" type="fixed">
+    <origin xyz="0 0 0.015" rpy="0 0 0" />
+    <parent link="end_effector" />
+    <child link="force_torque_sensor" />
+  </joint>
+
+  <link name="camera_disk_link" />
+  <joint name="ft_to_camera" type="fixed">
+    <origin xyz="0 0.05 -0.005" rpy="0 0 -1.57" />
+    <parent link="force_torque_sensor" />
+    <child link="camera_disk_link" />
+  </joint>
+
+  <link name="robotiq_85_base_link" />
+  <joint name="ft_to_robotiq" type="fixed">
+    <origin xyz="0 0 0.015" rpy="0 0 0" />
+    <parent link="force_torque_sensor" />
+    <child link="robotiq_85_base_link" />
+  </joint>
+
+  <link name="tcp_link" />
+  <joint name="robotiq_to_tcp" type="fixed">
+    <origin xyz="0 0 0.22" rpy="1.5708 0 0" /> 
+    <parent link="robotiq_85_base_link" />
+    <child link="tcp_link" />
+  </joint>
+
+  <link name="peg_tip_link" />
+  <joint name="tcp_to_peg_tip" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="tcp_link" />
+    <child link="peg_tip_link" />
+  </joint>
+
+</robot>
